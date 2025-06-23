@@ -1,0 +1,203 @@
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+/* ========== Browser Resets ========== */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+    outline: none;
+}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* ========== FlexSlider Essential Styles ========== */
+.flexslider {
+    border: none;
+    position: relative;
+    overflow: hidden;
+    zoom: 1;
+}
+.flexslider .slides > li {
+    display: none;
+    -webkit-backface-visibility: hidden;
+} /* Hide slides before JS loads */
+.flexslider .slides img {
+    width: 100%;
+    display: block;
+}
+
+/* Clearfix for slides */
+.slides:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* No JavaScript Fallback */
+.no-js .slides > li:first-child {
+    display: block;
+}
+
+/* ========== FlexSlider Default Theme ========== */
+.flex-viewport {
+    max-height: 2000px;
+    transition: all 1s ease;
+}
+.loading .flex-viewport {
+    max-height: 300px;
+}
+.flexslider .slides {
+    zoom: 1;
+}
+
+/* ========== Carousel Styles ========== */
+.carousel li {
+    margin-right: 5px;
+}
+
+/* ========== Direction Navigation (Prev/Next) ========== */
+.flex-direction-nav {
+    height: 0;
+}
+.flex-direction-nav a {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    text-indent: -9999px;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+.flex-direction-nav .flex-next {
+    right: 15px;
+}
+.flex-direction-nav .flex-prev {
+    left: 15px;
+}
+.flexslider:hover .flex-next,
+.flexslider:hover .flex-prev {
+    opacity: 1;
+}
+.flexslider:hover .flex-next:hover,
+.flexslider:hover .flex-prev:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+.flex-direction-nav .flex-disabled {
+    opacity: 0.3 !important;
+    cursor: default;
+}
+
+/* ========== Control Navigation (Pagination) ========== */
+.flex-control-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    display: flex;
+    gap: 8px;
+}
+.flex-control-nav li {
+    display: inline-block;
+}
+.flex-control-paging li a {
+    width: 12px;
+    height: 12px;
+    display: block;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid #84C639;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.flex-control-paging li a.flex-active {
+    background: #84C639;
+}
+
+/* Thumbnail Navigation */
+.flex-control-thumbs {
+    margin: 10px 0 0;
+    position: static;
+    overflow: hidden;
+}
+.flex-control-thumbs li {
+    width: 25%;
+    float: left;
+    margin: 0;
+}
+.flex-control-thumbs img {
+    width: 100%;
+    display: block;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.flex-control-thumbs img:hover,
+.flex-control-thumbs .flex-active {
+    opacity: 1;
+    cursor: default;
+}
+
+/* ========== Responsive Design ========== */
+@media screen and (max-width: 1080px) {
+    .flex-direction-nav a {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flexslider {
+        padding: 0;
+    }
+    .flex-control-nav {
+        bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flex-direction-nav a {
+        width: 20px;
+        height: 20px;
+    }
+    .flex-control-paging li a {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flexslider {
+        padding: 0px 0px;
+    }
+    .flex-control-nav {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .flexslider {
+        padding: 0;
+    }
+}
