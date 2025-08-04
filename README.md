@@ -1,99 +1,126 @@
-<h1 align="center">Online Grocery Store</h1>
+<h1 align="center">🛒 Online Grocery Store - Edible Oil E-Commerce Platform</h1>
+
 <p align="center">
-<a href="https://github.styleci.io/repos/299347824">
-<img alt="StyleCI" src="https://github.styleci.io/repos/299347824/shield">
-</a>
-<a href="http://hits.dwyl.com/gaurangkumar/Online-Grocery-Store" target="_blank">
-<img alt="HitCount" src="http://hits.dwyl.com/gaurangkumar/Online-Grocery-Store.svg">
-</a>
-<a href="http://php.net/" target="_blank">
-<img alt="Minimum PHP Version" src="https://img.shields.io/badge/php-%3E%3D%205.6-ee4499.svg?style=flat-plastic">
-</a>
+  <img alt="PHP Version" src="https://img.shields.io/badge/PHP-%3E=5.6-8892BF?style=flat-square&logo=php&logoColor=white" />
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-green.svg?style=flat-square">
+  <img alt="XAMPP Compatible" src="https://img.shields.io/badge/XAMPP-Compatible-orange?style=flat-square&logo=apache" />
+  <img alt="HitCount" src="http://hits.dwyl.com/gaurangkumar/Online-Grocery-Store.svg">
+  <img alt="StyleCI" src="https://github.styleci.io/repos/299347824/shield" />
 </p>
 
-# About Online Grocery Store
+---
 
-# 🛒 Edible Oil E-commerce Website
+## 📘 Project Overview
 
-This online platform, designed for selling edible oils, was developed as part of a Bachelor of Science (Computer Science) final year project. The system allows users to browse, select, and order various edible oil products, while administrators manage inventory, orders, and customer data.
+> A B.Sc. (Computer Science) Final Year Project  
+> 🏫 **V.E.S. College of Arts, Science, and Commerce, Mumbai**  
+> 👨‍💻 **Submitted by:** Rakesh Kailash Suvasiya  
+> 📅 **Academic Year:** 2024–2025
+
+This project brings the **convenience of e-commerce to edible oil retail**, featuring a secure customer interface, order management, inventory tracking, and more.
 
 ---
 
-## 📖 Project Overview
+## 🚀 Key Features
 
-This project aims to modernize the traditional retail process for edible oils through a comprehensive web application. It features customer login capabilities, product management, order tracking, and a cash-on-delivery (COD) payment option.
+### 👥 Customer Portal
+- 🔐 Secure Register & Login
+- 🛍️ Browse edible oil products
+- 🛒 Add to Cart & Update Quantities
+- 📦 Track Orders
+- 💬 Submit Product Feedback
+- 💰 Cash on Delivery (COD)
 
-> 📅 Academic Year: 2024-2025  
-> 🎓 Submitted by: **Rakesh Kailash Suvasiya**  
-> 🏫 College: V.E.S. College of Arts, Science, and Commerce, Mumbai
-
----
-
-## 🔧 Features
-
-### 👤 Customer Side
-- Register and log in
-- Browse and search for products
-- Add items to the cart and modify quantities
-- Place orders with Cash on Delivery
-- Submit feedback
-
-### 🛠️ Admin Panel
-- Secure login for administrators
-- Add, edit, and delete products and categories
-- Manage orders and inventory
-- View customer feedback
+### ⚙️ Admin Dashboard
+- 🧑‍💼 Secure Admin Login
+- 🛠 Add, Edit, Delete Products
+- 📊 Manage Inventory & Orders
+- 👀 View Customer Feedback
+- 🚨 Low Inventory Alerts
 
 ---
 
-## 🧑‍💻 Technologies Used
+## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| **PHP** | Server-side scripting |
-| **MySQL** | Database management |
-| **HTML/CSS** | Frontend layout and design |
-| **JavaScript** | Interactivity and client-side validation |
-| **XAMPP/Apache** | Local server development |
-
----
-
-## 📂 Project Modules
-
-- **User Management**  
-  Secure registration and login for both customers and administrators.
-
-- **Product Management**  
-  Add, update, and categorize oil products along with pricing and stock levels.
-
-- **Cart & Checkout**  
-  Manages the shopping cart with a COD-based checkout process.
-
-- **Order Management**  
-  Administrators can update and track the status of orders.
-
-- **Inventory Tracking**  
-  Automated stock updates and low-inventory alerts.
-
-- **Feedback System**  
-  Customers can share their reviews and queries.
+| Technology      | Role                          |
+|----------------|-------------------------------|
+| **PHP**        | Backend Scripting              |
+| **MySQL**      | Relational Database            |
+| **HTML/CSS**   | Structure and Styling          |
+| **JavaScript** | Client-Side Logic & Validation |
+| **XAMPP/Apache** | Local Development Server     |
 
 ---
 
-## ✅ Test Cases Included
+## 📁 Project Modules
 
-Comprehensive test cases for both customer and admin modules cover:
-- Login/Registration
-- Product Display
-- Cart Functionality
-- Order Placement
-- Feedback Handling
+- 🔑 **Authentication Module**  
+  Handles login/registration for customers and admins.
 
-(Details are available in the project report)
+- 🧴 **Product Catalog**  
+  Lists all edible oil items with pricing, quantity, and category filters.
+
+- 🛒 **Shopping Cart**  
+  Dynamic cart functionality with editable quantities and summary view.
+
+- 📥 **Order Processing**  
+  Real-time order status updates for admins and users.
+
+- 📦 **Inventory System**  
+  Automatic stock deduction and low-stock notification.
+
+- 💬 **Customer Feedback**  
+  Allows users to submit reviews, ratings, and inquiries.
 
 ---
 
-## 📄 Project Report
+## ✅ Test Coverage
 
-The full academic report, including diagrams, test cases, and screenshots, is provided as:
-👉 [Download Project Report (PDF)](./Project_Report_2025.pdf)
+| Module           | Status     |
+|------------------|------------|
+| Login/Register   | ✅ Passed  |
+| Product Display  | ✅ Passed  |
+| Cart Management  | ✅ Passed  |
+| Order Workflow   | ✅ Passed  |
+| Feedback System  | ✅ Passed  |
+
+> 🧪 Full test case documentation is available in the report.
+
+---
+
+## 📄 Documentation
+
+📘 Download full project documentation including:
+- Use Case Diagrams
+- ER Diagram
+- Test Cases
+- Admin/User Interface Screenshots  
+👉 [**Download Project Report (PDF)**](./Project_Report_2025.pdf)
+
+
+---
+
+## 💡 Future Enhancements
+
+- 💳 Online Payment Integration (UPI/Card)
+- 📱 Mobile Responsive Design
+- 🔔 Email/SMS Notifications for Orders
+- 📈 Sales Analytics for Admin
+- 🌐 Multi-language Support
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork, raise issues or suggest enhancements!  
+Made with ❤️ by **Rakesh Kailash Suvasiya**
+
+---
+
+## 📬 Contact
+
+📧 [rakesh.suvasiya@example.com]  
+🔗 [LinkedIn Profile](https://linkedin.com/in/your-profile)
+
+---
+
