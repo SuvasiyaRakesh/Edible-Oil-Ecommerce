@@ -120,7 +120,7 @@ Made with ❤️ by **Rakesh Kailash Suvasiya**
 ## 📬 Contact
 
 📧 [rakesh.suvasiya@example.com]  
-🔗 [LinkedIn Profile](https://linkedin.com/in/your-profile)
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/rakesh-suvasiya-023658248/)
 
 ---
 
